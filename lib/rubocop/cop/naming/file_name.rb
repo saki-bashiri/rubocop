@@ -28,7 +28,7 @@ module RuboCop
                             'called `%<namespace>s`.'.freeze
         MSG_REGEX = '`%<basename>s` should match `%<regex>s`.'.freeze
 
-        SNAKE_CASE = /^[\da-z_.?!]+$/
+        SNAKE_CASE = /^[\da-z_.+?!]+$/
 
         def investigate(processed_source)
           file_path = processed_source.file_path
